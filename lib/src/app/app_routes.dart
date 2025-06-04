@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-Map<String, Widget> generateRoutes() {
+Map<String, WidgetBuilder> generateRoutes(){
   final Map<String, WidgetBuilder> routes = {};
 
-  for(var item in appMenuItems) {
+  for(var item in appMenuItems){
     routes[item.route] = 
       (context) => BaseLayout();
   }
