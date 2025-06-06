@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:utilidades/src/controllers/about_controller.dart';
 
 class AboutView extends StatelessWidget {
@@ -31,12 +32,14 @@ class AboutView extends StatelessWidget {
             ),
             SizedBox(height: 20),
              Row(
+              mainAxisAlignment: MainAxisAlignment.center,
             children: about.SocialLinks.map((link){
                 return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8),
                   child: Column(
                     children: [
-                      IconButton(onPressed: (){}, icon: Icon(link.icon)),
+                      IconButton(onPressed: (){}, icon: FaIcon(link.icon, color: link.color,)),
+                      Text(link.name,style:  TextStyle(fontSize: 12, color: link.color),)
                     ],
                   ),
                 );
