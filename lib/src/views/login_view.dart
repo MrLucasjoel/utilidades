@@ -33,6 +33,7 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 1, 92, 84),
       appBar: AppBar(title: Text("Login"),),
       body:  Padding(
         padding: EdgeInsets.all(16),
@@ -41,12 +42,13 @@ class _LoginViewState extends State<LoginView> {
           children: [
             Padding(
               padding: EdgeInsetsGeometry.only(bottom: 30),
-              child: Image.asset("assets/logo/kings.png", width: 200,),
+              child: Image.asset("assets/logo/kings.png", width: 400,),
             ),
             TextField(
               controller: _usernameController,
               decoration: InputDecoration(
                 labelText: "Usuário",
+                labelStyle: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12)
                 ),
@@ -58,6 +60,7 @@ class _LoginViewState extends State<LoginView> {
               controller: _passwordController,
               decoration: InputDecoration(
                 labelText: "Senha",
+                labelStyle: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12)
                 ),

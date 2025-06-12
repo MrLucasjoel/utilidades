@@ -13,13 +13,13 @@ class CustomAppDrawer extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           Container(
-            color: Colors.teal,
+            color: const Color.fromARGB(255, 1, 92, 84),
             height: 150,
             alignment: Alignment.center,
             child: Padding(
               padding: EdgeInsets.only(top: 1),
               child: Center(
-                child: Image.asset("assets/logo/kings.png", width: 100,),
+                child: Image.asset("assets/logo/kings.png", width: 200,),
               ),
             )
           ),
