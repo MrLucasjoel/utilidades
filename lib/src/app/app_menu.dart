@@ -29,7 +29,7 @@ final List<MenuModel> appMenuItems = [
 
    MenuModel(
     title: "Previsõa de Clima",
-    icon: Icons.temple_buddhist_sharp,
+    icon: Icons.thermostat_auto,
     route: "/previsõadeclima",
     page: PrevisaoView(),
   ),
