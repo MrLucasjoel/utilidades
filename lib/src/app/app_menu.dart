@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:utilidades/src/models/menu_model.dart';
+import 'package:utilidades/src/views/Previsao_view.dart';
 import 'package:utilidades/src/views/about_view.dart';
 import 'package:utilidades/src/views/converter_view.dart';
 import 'package:utilidades/src/views/home_view.dart';
@@ -24,5 +25,12 @@ final List<MenuModel> appMenuItems = [
     icon: Icons.design_services,
     route: "/convertermedidas",
     page: ConverterView(),
+  ),
+
+   MenuModel(
+    title: "Previsõa de Clima",
+    icon: Icons.temple_buddhist_sharp,
+    route: "/previsõadeclima",
+    page: PrevisaoView(),
   ),
 ];

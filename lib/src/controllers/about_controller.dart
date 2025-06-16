@@ -12,6 +12,7 @@ class AboutController {
           "Venha conhecer um pouco mais de mim",
           "Profisional Tec",
           "💻 Entra21/PróWay Flutter, SQL, JS📲",
+          "     +Devs2/Senai Flutter",
           "Siga-me nas redes sociasis",
           ],
       SocialLinks: [

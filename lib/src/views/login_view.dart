@@ -14,12 +14,23 @@ class _LoginViewState extends State<LoginView> {
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();
   String _message = '';
+  
+  bool _isLoading = false;
 
   void _handleLogin() async{
     final success = await _controller.login(
       _usernameController.text,
       _passwordController.text,
     );
+
+    @override
+void dispose() {
+  _usernameController.dispose();
+  _passwordController.dispose();
+  super.dispose();
+}
+
+if (!mounted) return;
 
     if(success) {
       AuthService.login();
@@ -33,7 +44,7 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 1, 92, 84),
+        backgroundColor: const Color.fromARGB(255, 1, 92, 84), // Define a cor de fundo do Scaffold
       appBar: AppBar(title: Text("Login"),),
       body:  Padding(
         padding: EdgeInsets.all(16),
@@ -41,8 +52,8 @@ class _LoginViewState extends State<LoginView> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsetsGeometry.only(bottom: 30),
-              child: Image.asset("assets/logo/kings.png", width: 400,),
+              padding: EdgeInsets.only(bottom: 30),
+              child: Image.asset("assets/logo/kings.png", width: 200,),
             ),
             TextField(
               controller: _usernameController,
@@ -68,7 +79,9 @@ class _LoginViewState extends State<LoginView> {
               obscureText: true,
             ),
             SizedBox(height: 10,),
-            ElevatedButton(
+           _isLoading 
+            ? CircularProgressIndicator()
+            : ElevatedButton(
               onPressed: _handleLogin,
               child: Text("entrar")
             ),
