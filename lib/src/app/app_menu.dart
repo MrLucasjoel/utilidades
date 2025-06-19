@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:utilidades/src/models/menu_model.dart';
-import 'package:utilidades/src/views/Previsao_view.dart';
+import 'package:utilidades/src/views/Temperature_view.dart';
 import 'package:utilidades/src/views/about_view.dart';
 import 'package:utilidades/src/views/converter_view.dart';
 import 'package:utilidades/src/views/home_view.dart';
@@ -31,6 +31,6 @@ final List<MenuModel> appMenuItems = [
     title: "Previsõa de Clima",
     icon: Icons.thermostat_auto,
     route: "/previsõadeclima",
-    page: PrevisaoView(),
+    page: TemperatureView(),
   ),
 ];
