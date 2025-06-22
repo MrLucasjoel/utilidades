@@ -29,16 +29,16 @@ final List<MenuModel> appMenuItems = [
   ),
 
    MenuModel(
-    title: "Previsõa de Clima",
+    title: "Previsao de Temperatura",
     icon: Icons.thermostat_auto,
-    route: "/previsõadeclima",
+    route: "/previsaodetemperature",
     page: TemperatureView(),
   ),
 
   MenuModel(
-    title: "configurações",
+    title: "configuracao",
     icon: Icons.settings,
-    route: "/configuração",
+    route: "/configuracao",
     page: ConfiguracaoView(),
   ),
 ];
