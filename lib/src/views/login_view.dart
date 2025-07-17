@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:utilidades/src/controllers/login_controller.dart';
 import 'package:utilidades/src/models/user_model.dart';
-import 'package:utilidades/src/services/auth_service.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});

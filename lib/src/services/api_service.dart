@@ -7,7 +7,7 @@ class ApiService {
   USAR API LOCAL
   HTT://10.0.2.2:3000
   */
-  final _baseUrl = "HTT://10.0.2.2:3000";
+  final _baseUrl = "http://10.0.2.2:3000";
 
   Future<String?> login(Map<String, dynamic> data) async{
     final url = Uri.parse('$_baseUrl/login');
