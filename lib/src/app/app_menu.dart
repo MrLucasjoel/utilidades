@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:utilidades/src/models/menu_model.dart';
 import 'package:utilidades/src/views/Temperature_view.dart';
 import 'package:utilidades/src/views/about_view.dart';
+import 'package:utilidades/src/views/alunos_view.dart';
 import 'package:utilidades/src/views/configuracao_view.dart';
 import 'package:utilidades/src/views/converter_view.dart';
 import 'package:utilidades/src/views/home_view.dart';
@@ -66,6 +67,13 @@ final List<MenuModel> appMenuItems = [
     icon: Icons.settings,
     route: "/loginriver",
     page: ProviderScope(child: LoginRiver()),
+  ),
+
+  MenuModel(
+    title: "Alunos",
+    icon: Icons.school,
+    route: "/alunos",
+    page: AlunosView(),
   ),
 
   MenuModel(

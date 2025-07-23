@@ -15,8 +15,8 @@ class AppWidget extends StatelessWidget {
       initialRoute: "/loginfirebase",
       /* home: AuthService.checkLogin ? const HomeView() : const LoginView(), */
         routes: {
-        "/login": (context) => LoginView(),
-        "/loginfirebase" : (context) => const FirebaseLoginView(),
+        //"/login": (context) => LoginView(),
+        "/loginfirebase": (context) => const FirebaseLoginView(),
         ...generateRoutes(),
       },
     );

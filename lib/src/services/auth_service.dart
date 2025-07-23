@@ -11,7 +11,7 @@ class AuthService {
   static void logout() {
     isLoggedIn = false;
   } */
-
+ 
  Future<bool> checkLogin(context) async{
   final prefs = await SharedPreferences.getInstance();
   final token = prefs.getString('jwt_token');
@@ -21,7 +21,7 @@ class AuthService {
     return false;
   }
   return true;
- }
+ } 
 
  Future<void> logout() async {
   final prefs = await SharedPreferences.getInstance();

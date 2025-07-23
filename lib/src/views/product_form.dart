@@ -89,8 +89,11 @@ class _ProductFormState extends State<ProductForm> {
         ),
       ),
       actions: [
-        TextButton(onPressed: () => Navigator.pop(context), child: Text("Cancelar")),
-        ElevatedButton(onPressed: _salvar, child: Text("Salvar"))
+        TextButton(
+          onPressed: () => Navigator.pop(context), 
+          child: Text("Cancelar"),
+        ),
+        ElevatedButton(onPressed: _salvar, child: Text("Salvar")),
       ],
     );
   }
