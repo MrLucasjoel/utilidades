@@ -57,14 +57,14 @@ final List<MenuModel> appMenuItems = [
 
   MenuModel(
     title: "Riverpod",
-    icon: Icons.settings,
+    icon: Icons.settings_backup_restore,
     route: "/riverpod",
     page: ProviderScope(child: RiverpodExemple()),
   ),
 
   MenuModel(
     title: "Login River",
-    icon: Icons.settings,
+    icon: Icons.settings_backup_restore,
     route: "/loginriver",
     page: ProviderScope(child: LoginRiver()),
   ),
